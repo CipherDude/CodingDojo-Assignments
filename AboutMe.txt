@@ -1,0 +1,3 @@
+Name: Jonathan
+Goal: Git Ninja
+Favorite TV Show: 24
