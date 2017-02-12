@@ -1,0 +1,1 @@
+These are assignments from Coding Dojo Web Fundamentals
