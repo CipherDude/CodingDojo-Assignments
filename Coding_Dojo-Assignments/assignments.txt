@@ -1,0 +1,26 @@
+Jonathans-MBP:HTML jona$ ls -R
+about.html		indentation.html
+
+./indentation.html:
+Jonathans-MBP:HTML jona$
+
+——
+
+Or did you want the WebFundamentals directory list?….
+
+Jonathans-MBP:WebFundamentals jona$ ls -R
+CSS		Git		HTML		Javascript	about.html
+
+./CSS:
+about.html
+
+./Git:
+about.html
+
+./HTML:
+about.html		indentation.html
+
+./HTML/indentation.html:
+
+./Javascript:
+about.html
