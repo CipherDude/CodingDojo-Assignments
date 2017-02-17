@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html style="background-color:rgba(176, 180, 222, 0.77);">
+  <head>
+    <meta charset="utf-8">
+    <meta name="descrition" content="My Fake Blog">
+    <title>My Awesome Fake Blog</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <!-- Header: Home, Contact, Info, title with name-->
+        <div id="header">
+          <ul>
+            <li>Home</li>
+            <li>Contact Me</li>
+            <li>Information</li>
+          </ul>
+            <h1>My Fake Blog: Jonny Appleseed</h1>
+        </div>
+        <!-- My Picture-->
+          <div id="picture">
+            <img src="./jonny_appleseed.jpg" style="width:20%;height:20%" alt="picture of jonny Appleseed">
+          </div>
+        <!-- My Bio-->
+        <div id="bio">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec dui sit amet eros bibendum aliquet et nec ligula. Integer in ultrices sem. Aenean sapien felis, congue vel volutpat nec, facilisis et ante. Vestibulum sit amet lacinia urna. Nullam tincidunt lacus sed augue mollis, suscipit pharetra nisl scelerisque. Nulla ullamcorper euismod tellus ut maximus. Aliquam dapibus ante eu augue efficitur, nec sagittis lectus suscipit.
+          </p>
+        </div>
+        <!-- My Portfolio-->
+        <p><span style="color:green;font-size:30px">My Portfolio</span></p>
+        <div id="Portfolio">
+          <table>
+            <tbody>
+              <tr>
+                <td>
+                  <img src=./color_brick_wall.jpg alt="Portfolio: Bricks" style="width:60
+                  %;height:60%">
+                </td>
+                <td align="center">
+                  <img src="./Color_Collage_Leaf.jpg" alt="Color Collage" style="width:50%;height:50%">
+                </td>
+                <td>
+                  <img src="./filter_madness.jpg" alt="Filter madness" style="width:60%;height:60%">
+                </td>
+                <td>
+                  <img src="./lightening.jpg" alt="lightning picture" style="width:80%;hight:80%">
+              </td>
+              </tr>
+            </tbody>
+          </table>
+          <!--Movie-->
+          <p>
+            To see a small animation please click <a href="./bouncing_ball_with_sound.mp4">here.</a>
+          </p>
+        </div>
+        <!--Survey-->
+        <div id="survey">
+            <p>
+              <span style="font-size:20px;color:rgba(120, 85, 7, 0.91)">Please take a moment and take the following survey:</span>
+            </p>
+            <form action="index.html" method="post">
+
+              <p><label for="first_name">First Name:</label>
+              <input type="text" id="first_name" name="first_name"></p>
+
+              <p><label for="last_name">Last Name:</label>
+              <input type="text" id="last_name" name="last_name"></p>
+
+              <p><label for="email" style="margin:left">Email:</label>
+              <input type="text" id="email" name="email"></p>
+
+              <p>Would you like to be contacted?</p>
+              <p><label for="yes">Yes</label>
+              <input type="radio" id="yes" name="yes_contact" value="yes">&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+              <label for="no">No</label>
+              <input type="radio" id="no" name="no_contact" value="no"></p>
+
+              <p>If you would like to be contacted, by which methods would you like to be contacted?</p>
+
+              <p><input type="checkbox" name="contact_method" value="email"> &nbsp;&nbsp;
+              <label for="email">Email</label></p>
+
+              <p><input type="checkbox" id="texting" name="contact_method" value="texting">&nbsp;&nbsp;<label for="texting">Texting</label>&nbsp;&nbsp;
+              <input type="text" id="texting_number" name="texting_number" /></p>
+
+              <p>Comments:</p>
+              <textarea rows="5" cols="50" name="comments">Please type your comments here.</textarea>
+          </form>
+        </div>
+    </div>
+
+    <input type="submit" value="submin">
+  </body>
+</html>

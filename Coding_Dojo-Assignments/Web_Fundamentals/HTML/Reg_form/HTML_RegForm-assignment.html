@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>My Form</title>
+        <meta name="description" content="My form">
+    </head>
+    <body>
+        <h1>My Registration Form</h1>
+          <form action="process.php" method="post"></form>
+          <table>
+        <!-- First Name-->
+          <tr>
+            <td>
+              <label for="first_name"><span>First Name: </span></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <input type="text" id="first_name" name="first_name">
+
+          </tr>
+        <!-- Last Name-->
+          <tr>
+            <td ><label for="last_name">Last Name: </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <input type="text" id="last_name" name="last_name">
+            </td>
+          </tr>
+        <!-- Email-->
+        <tr>
+          <td>
+            <label for="email">Email:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" id="email" name="email">
+          </td>
+        </tr>
+        <!--Password-->
+        <tr>
+          <td>
+            <label for="password">Password: </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="password" id="password" name="password">
+          </td>
+        </tr>
+        <!--Password Confirm-->
+        <tr>
+          <td>
+            <label for="password_confirm">Password Confirm:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="password" id="password_confirm" name="password_confirm">
+          </td>
+        </tr>
+        <!--Birthday-->
+        <tr>
+          <td>
+            <label for="birthday">Birthday: </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="date" id="birthday" name="birthday">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./calendar-icon_sml.png" alt="calendar icon">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="male">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" value="female">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="other">Other</label>
+            <input type="radio" id="other" name="gender" value="other">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Short description about yourself:</p>
+            <textarea rows="4" cols="50" name="description"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Favorite Programming Language?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <select name="prog_language">
+                <option value="java">Java</option>
+                <option value="javascript">Javascript</option>
+                <option value="ruby on rails">Ruby on Rails</option>
+                <option value="python">Python</option>
+              </select></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="submit" name="submit" value="Submit">
+          </td>
+        </tr>
+      </table>
+    </body>
+</html>
