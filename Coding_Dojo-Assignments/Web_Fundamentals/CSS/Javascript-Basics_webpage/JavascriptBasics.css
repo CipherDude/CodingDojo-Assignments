@@ -1,0 +1,110 @@
+/*JavaScript Basics CSS*/
+
+
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: times serif;
+	color: #c6d6e9;
+	vertical-align: top;
+}
+a{
+	color: #84d4d5;
+}
+
+#wrapper {
+	width: 970px;
+	background-color: #21345a;
+	padding: 10px
+}
+
+#header {
+	background-color: #be3e3d;
+	border-radius: 15px;
+	height: 70px;
+}
+
+#title_text{
+	font-size: 35px;
+	margin-left: 15px;
+	font-size: 30px;
+	font-weight: 700;
+	padding-top: 20px
+}
+
+#side_nav{
+	background-color:#427b8a;
+	border-radius: 15px;
+	font-size: 15px;
+	width: 200px;
+	padding-top: 10px;
+	margin-top: 20px;
+	padding-bottom: 10px;
+	display: inline-block
+}
+#sideNavLevel1_text {
+	margin-left: 15px;
+	list-style: none;
+}
+#sideNavLevel2_text {
+	margin-left: 15px;
+	list-style-type: disc;
+
+}
+#sideNavLevel3_text {
+	margin-left: 20px;
+	list-style-type: circle;
+}
+#main_content_container {
+	background-color: #101821;
+	border-radius: 20px;
+	display: inline-block;
+	margin-top: 20px;
+	margin-left: 20px;
+	display: inline-block;
+	width: 740px;
+}
+
+#main_content-title {
+	margin-left: 2px;
+	font-size: 20px;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	font-weight: 600;
+	display: inline-block;
+}
+
+#main_content-list{
+	margin-left: 15px;
+	margin: 20px;
+	display: inline-block
+
+}
+
+.main_content-spanColorPurple {
+	color: #8290fd;
+}
+
+#footer{
+	background-color: #5f6572;
+	border-radius: 15px;
+	height: 30px;
+	font-size: 15px;
+	padding-top: 15px;
+	width: 965px;
+	margin-top: 20px;
+
+}
+
+#footer_text{
+	margin-left: 20px;
+}
+#main_content_text {
+	font-size: 15px;
+	margin-left: 30px;
+	margin-right: 10px;
+}
+.blue_underline {
+	color: #88dae4;
+	text-decoration: underline;
+}
