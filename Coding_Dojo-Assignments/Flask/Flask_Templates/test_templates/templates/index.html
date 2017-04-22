@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My First template</title>
+  </head>
+  <body>
+    <h3>My First flask template with embedded python</h3>
+    <!-- this will output the value of our phrase variable -->
+    <p>Phrase: {{phrase}}</p>
+    <!--This will output the value of our times variable -->
+    <p>Times: {{times}}</p>
+    <!-- Here is an example of embedding a for-lop in our code -->
+    {% for x in range(0,times): %}
+    {% endfor %}
+
+
+  </body>
+</html>

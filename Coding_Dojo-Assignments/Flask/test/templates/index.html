@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Index page TEST</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/my_stylesheet.css') }}" />
+    <script type="text/javascript" src="{{ url_for('static', filename='js/my_jsScript.js') }}"></script>
+
+  </head>
+  <body>
+    <h3>This is index page. TEST</h3>
+    <img src="{{ url_for('static', filename='images/IMG_0101.jpg')}}" alt="My class picture">
+  </body>
+</html>

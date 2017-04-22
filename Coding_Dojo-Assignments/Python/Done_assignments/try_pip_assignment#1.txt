@@ -1,0 +1,15 @@
+1) pip install <module>:
+	= Installs the application onto the computer.
+
+2) pip list:
+	= lists all packages including editables (including pip itself) in a generic format. User has more options.
+
+3) pip freeze:
+	= lists modules that pip has installed in special required format. This allows pip to use a list to install from.
+
+4) pip show <module>:
+	= shows information about the specific module.
+
+When installing module already installed, the user gets the following return: “Requirement already satisfied”
+
+When “pip freeze > requirements.txt” is initiated, a file is made: “requirements.txt”. When opened, a list of packages from pip is inside.
