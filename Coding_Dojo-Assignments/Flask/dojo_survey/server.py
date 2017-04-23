@@ -1,6 +1,11 @@
 from flask import Flask, render_template, redirect, request
 app=Flask (__name__)
 
+name=''
+location=''
+language=''
+comment=''
+
 @app.route('/')
 def index():
     return render_template('index.html')
@@ -21,7 +26,7 @@ def data():
 
 @app.route('/output')
 def output():
-    return render_template('output.html')
+    return render_template('output.html', name=name, location=location, language=language, comment=comment)
 
 
 
