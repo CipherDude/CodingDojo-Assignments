@@ -10,12 +10,27 @@
     <h1>Dojo Survey</h1>
     <div id="wrapper">
       <form id="label" action="/data" method="post">
-        <p>Your Name: <input type="text" name="name"></p>
-        <p>Dojo Lacation: <input type="text" name="location"></p>
-        <p>Favorite Language: <input type="text" name="language"></p>
-        <p>Comment (optional):</p>
-          <textarea name="comment" rows="10" cols="50"></textarea><br>
-        <input type="submit" name="submit">
+        <p>Your Name: <input id='name' type="text" name="name"></p>
+        <p>Dojo Lacation:
+          <select name=location class="location">
+            <option value="Choose One" disabled selected>Choose One</option>
+            <option value="San Jose">San Jose</option>
+            <option value="Los Angeles">Los Angeles</option>
+            <option value="Portland">Portland</option>
+          </select>
+        </p>
+        <p>Favorite Language:
+          <select name="language" class='language'>
+            <option value="Choose One" disabled selected>Choose One...</option>
+            <option value="Python">Python</option>
+            <option value="Ruby On Rails">Ruby On Rails</option>
+            <option value="html">HTML</option>
+            <option value="Javascript">Javascript</option>
+          </select>
+        </p>
+        <p>Comment (optional):<textarea name="comment" rows="10" cols="50" placeholder="Write you comment here.">
+        </textarea></p>
+          <input id="button" type="submit" name="submit">
       </form>
     </div>
   </body>

@@ -1,10 +1,13 @@
 from flask import Flask, render_template, redirect, request
 app=Flask (__name__)
 
-name=''
-location=''
-language=''
-comment=''
+dictForm = {
+'name':'',
+'location':'',
+'language':'',
+'comment':''
+}
+
 
 @app.route('/')
 def index():
@@ -12,21 +15,15 @@ def index():
 
 @app.route('/data', methods=['POST'])
 def data():
-    mydata = request.form
-    print mydata
-    name = request.form['name']
-    print name
-    location = request.form['location']
-    print location
-    language = request.form['language']
-    print language
-    comment = request.form['comment']
-    print comment
-    return redirect('/output')
+    dictForm['name'] = request.form['name']
+    dictForm['location'] = request.form['location']
+    dictForm['language'] = request.form['language']
+    dictForm['comment'] = request.form['comment']
+    return redirect('/results')
 
-@app.route('/output')
-def output():
-    return render_template('output.html', name=name, location=location, language=language, comment=comment)
+@app.route('/results', methods=['GET'])
+def results():
+    return render_template('results.html', name=dictForm['name'], location=dictForm['location'], language=dictForm['language'], comment=dictForm['comment'])
 
 
 

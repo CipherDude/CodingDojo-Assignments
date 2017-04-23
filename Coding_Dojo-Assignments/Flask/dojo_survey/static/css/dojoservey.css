@@ -14,11 +14,17 @@ h1{
   padding-left: 60px;
   padding-top: 40px;
   padding-bottom: 40px;
-
 }
-input[type=text] {
-    width: 30%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
+
+#button{
+  margin-left: 270px;
+}
+.language{
+  margin-left: 55px;
+}
+.location{
+  margin-left: 100px;
+}
+#name{
+  margin-left: 85px;
 }
